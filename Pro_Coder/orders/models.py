@@ -1,7 +1,7 @@
 from django.db import models
 
 class Order (models.Model):
-    numbre_order = models.IntegerField
-    products = models.__dict__
-    time = models.DateTimeField(auto_now_add=True)
+    number_order = models.IntegerField()
+    name_client = models.CharField(max_length=80)
+    time = models.DateField(auto_now= True)
 

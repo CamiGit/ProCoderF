@@ -17,7 +17,7 @@ def new_order(request):
         if form.is_valid():
             Order.objects.create(
                 number_order = form.cleaned_data['number_order'],
-                products = form.cleaned_data['products'],
+                name_client = form.cleaned_data['name_client'],
                 time = form.cleaned_data['time']
             )
             context = {
